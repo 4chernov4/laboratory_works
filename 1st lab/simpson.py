@@ -30,7 +30,7 @@ print(simpsonmethod(f, a, b, 100))
 print(simpsonmethod(f, a, b, 1000))
 
 plt.axis([0, 1100, 60, 80])
-plt.title('График точности метода Симпсона', fontsize=20, fontname='Times New Roman')
+plt.title('График точности метода Симпсона ', fontsize=20, fontname='Times New Roman')
 plt.xlabel('Количество разбиений n', color='gray')
 plt.ylabel('Значение функции', color='gray')
 plt.text(1, simpsonmethod(f, a, b, 1), 'n = 1')
