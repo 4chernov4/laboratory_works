@@ -8,12 +8,12 @@ ainput = int(input('Введите нижнюю границу:'))
 binput = int(input('Введите верхнюю границу:'))
 
 
-def trapeze(f, n, a, b):
+def rectangle(f, n, a, b):
     x = 0
     dx = (b - a) / n    #ширина
     for i in range(n):
-        x += dx * (f(a + dx * i) + f(a + dx + dx * i)) / 2  #Формула метода трапеций
+        x += dx * f(a + dx / 2 + i * dx)   #Формула метода прямоугольников
     return x
 
 
-print(trapeze(f, divn, ainput, binput)) #Вывод
+print(rectangle(f, divn, ainput, binput))   #Вывод
