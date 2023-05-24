@@ -28,7 +28,7 @@ print(check_point_in_area(xi, yi))
 
 
 plt.axis([-10, 10, -20, 20])
-plt.title('Лаба 1', fontsize=20, fontname='Times New Roman')
+plt.title('Лаба 4', fontsize=20, fontname='Times New Roman')
 plt.xlabel('Ось x', color='gray')
 plt.ylabel('Ось y', color='gray')
 plt.ioff()
